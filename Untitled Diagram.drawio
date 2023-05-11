@@ -1,9 +1,93 @@
-<mxfile host="app.diagrams.net" modified="2023-05-11T13:14:29.837Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" version="21.2.9" etag="Ed8reoOLJiFBl7QITbM_" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-11T13:23:21.412Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="cvslNa2J5zTsQd5hRDYD" version="21.2.9" type="github">
   <diagram name="Page-1" id="IQd6-8zLecMnYZZPZ7Uw">
-    <mxGraphModel>
+    <mxGraphModel dx="1876" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-1" target="_ROjLBNsiD0XPwdi3AN4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-1" value="raspi-node3&lt;br&gt;dd agent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-2" target="_ROjLBNsiD0XPwdi3AN4-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-2" target="_ROjLBNsiD0XPwdi3AN4-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-2" value="raspi-master&lt;br&gt;cloud HA Proxy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-4" target="_ROjLBNsiD0XPwdi3AN4-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-4" target="_ROjLBNsiD0XPwdi3AN4-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-4" target="_ROjLBNsiD0XPwdi3AN4-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-4" target="_ROjLBNsiD0XPwdi3AN4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-4" value="raspi-node1&lt;br&gt;on prem HAProxy" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="115" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-8" target="_ROjLBNsiD0XPwdi3AN4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-8" value="raspi-node1&lt;br&gt;vector-metrics 8082" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="115" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-10" target="_ROjLBNsiD0XPwdi3AN4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-10" value="raspi-node1&lt;br&gt;vector-logs 8081" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-15" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-11" target="_ROjLBNsiD0XPwdi3AN4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-11" value="raspi-node1&lt;br&gt;vector-traces 8083" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="245" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-17" target="_ROjLBNsiD0XPwdi3AN4-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-17" target="_ROjLBNsiD0XPwdi3AN4-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-17" target="_ROjLBNsiD0XPwdi3AN4-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-17" target="_ROjLBNsiD0XPwdi3AN4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-17" value="raspi-node2&lt;br&gt;on prem HAProxy" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-18" target="_ROjLBNsiD0XPwdi3AN4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-18" value="raspi-node2&lt;br&gt;vector-metrics 8082" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-19" target="_ROjLBNsiD0XPwdi3AN4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-19" value="raspi-node2&lt;br&gt;vector-logs 8081" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_ROjLBNsiD0XPwdi3AN4-20" target="_ROjLBNsiD0XPwdi3AN4-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-20" value="raspi-node2&lt;br&gt;vector-traces 8083" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ROjLBNsiD0XPwdi3AN4-23" value="Datadog SaaS" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
