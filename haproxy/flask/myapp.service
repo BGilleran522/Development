@@ -1,0 +1,12 @@
+[Unit]
+Description=My Flask App
+After=network.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/flask
+ExecStart=/usr/bin/python3 /home/pi/flask/app.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

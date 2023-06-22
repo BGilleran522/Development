@@ -1,0 +1,16 @@
+---
+- name: Uninstall Datadog Agent
+  hosts: raspi-node3
+  become: yes
+  roles:
+    - datadog.datadog	
+  vars:
+    datadog_api_key: ${DD_API_KEY}
+
+  tasks:
+
+
+    - name: Uninstall Datadog Agent
+      apt:
+        name: datadog-agent
+        state: absent
