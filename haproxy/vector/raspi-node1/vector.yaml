@@ -1,0 +1,42 @@
+---
+api: 
+  enabled: true
+
+sources:
+  datadog_logs:
+    type: datadog_agent
+    address: 0.0.0.0:8081
+    disable_metrics: true
+    disable_traces: true
+  
+  datadog_metrics:
+    type: datadog_agent
+    address: 0.0.0.0:8082
+    disable_logs: true
+    disable_traces: true
+  
+  datadog_traces:
+    type: datadog_agent
+    address: 0.0.0.0:8083
+    disable_logs: true
+    disable_metrics: true
+    
+
+sinks:
+  dd_logs:
+    type: datadog_logs
+    inputs:
+      - datadog_logs
+    default_api_key: ${DD_API_KEY}
+
+  dd_metrics:
+    type: datadog_metrics
+    inputs:
+      - datadog_metrics
+    default_api_key: ${DD_API_KEY}
+
+  dd_traces:
+    type: datadog_traces
+    inputs:
+      - datadog_traces
+    default_api_key: ${DD_API_KEY}

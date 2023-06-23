@@ -1,0 +1,65 @@
+---
+- name: Install Datadog Agent
+  hosts: raspi-node3
+  become: yes
+  roles:
+    - datadog.datadog	
+  vars:
+    datadog_api_key: ${DD_API_KEY}
+    datadog_config:
+      tags: 
+        - "env:prod" 
+      dd_url: https://twentytwopark.com:3834
+      log_level: DEBUG
+      apm_config: 
+        enabled: true
+        apm_dd_url: https://twentytwopark.com:3835
+      logs_enabled: true
+      logs_config:
+          logs_dd_url: https://twentytwopark.com:3838
+          force_use_http: true
+    datadog_checks:
+      my_flask_app:
+        logs:
+          - type: file
+            path: /home/pi/flask/logs/app.log
+            service: flask
+            source: flask
+  tasks:
+    - name: Add Datadog GPG key
+      apt_key:
+        url: https://apt.datadoghq.com/DATADOG_RPM_KEY_PUBLIC
+        state: present
+
+    - name: Add Datadog APT repository
+      apt_repository:
+        repo: "deb https://apt.datadoghq.com/ stable main"
+        state: present
+
+    - name: Install Datadog Agent
+      apt:
+        name: datadog-agent
+        state: present
+
+    - name: Configure Datadog Agent
+      template:
+        src: /etc/datadog-agent/datadog.yaml.j2
+        dest: /etc/datadog-agent/datadog.yaml
+        owner: root
+        group: root
+        mode: '0644'
+      notify:
+        - restart datadog-agent
+
+    - name: Enable and start Datadog Agent service
+      systemd:
+        name: datadog-agent
+        enabled: yes
+        state: started
+
+  handlers:
+    - name: restart datadog-agent
+      systemd:
+        name: datadog-agent
+        state: restarted
+
